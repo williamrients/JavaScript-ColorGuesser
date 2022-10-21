@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Color Guessing</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="main.css" />
+</head>
+
+<body>
+    <h1>Guess The Color!</h1>
+    <button id="diffColor">Generate a different colors</button>
+    <p id="color-showed"></p>
+
+    <div id="container">
+        <div id="circle1"></div>
+        <div id="circle2"></div>
+        <div id="circle3"></div>
+        <div id="circle4"></div>
+        <div id="circle5"></div>
+        <div id="circle6"></div>
+    </div>
+
+    <div id="popup-container">
+        <div id="modal">
+            <h2 id="final-message">
+                Welcome to Color Guesser!<br />
+                Click play to begin.
+            </h2>
+            <button id="play-button">Play</button>
+        </div>
+    </div>
+    <div id="notification-container">
+        <p>Try again.</p>
+    </div>
+
+    <div id="winning-container">
+        <div id="modal2">
+            <h2>You Win!</h2>
+            <button id="play-again-button">Play Again?</button>
+        </div>
+    </div>
+
+    <footer>
+        <p>Copyright &copy; <span id="year"></span> - William Rients</p>
+        <div id="nav-content">
+            <ul>
+                <li>
+                    <a href="https://www.instagram.com/williamrients/" target="_blank"></a>
+                </li>
+                <li><a href="mailto:williamrients@gmail.com"></span></a></li>
+                <li><a href="https://www.linkedin.com/in/william-rients-61a94a215" target="_blank"></a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="main.js"></script>
+    <script>
+        var year = new Date().getFullYear();
+        document.getElementById("year").textContent = year;
+    </script>
+</body>
+
+</html>
